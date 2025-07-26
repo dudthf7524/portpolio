@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import './globals.css'; // tailwind import 포함
 import Navbar from '@/components/Navbar';
 import { ReactNode } from 'react';
@@ -11,10 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ko">
-      <body className="bg-black text-white">
-        <Navbar /> {/* ✅ 모든 페이지 상단에 고정 */}
-        {children}
-      </body>
+      <body>
+        <div className="min-h-screen bg-gradient-to-br from-black via-black to-[#2f003f] text-white">
+          <Navbar /> {/* ✅ 모든 페이지 상단에 고정 */}
+          {children}
+        </div>
+      </body >
     </html>
   );
 }

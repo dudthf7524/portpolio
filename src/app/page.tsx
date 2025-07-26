@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     // <div className="min-h-screen bg-gradient-to-br from-black via-black to-[#2b0000] text-white">
-    <div className="min-h-screen bg-gradient-to-br from-black via-black to-purple-900 text-white">
+    <div className="text-white">
 
       {/* Header */}
       {/* <header className="flex justify-between items-center px-6 py-4 border-b border-white/10">

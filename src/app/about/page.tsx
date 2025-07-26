@@ -1,8 +1,16 @@
+'use client';
+
+import {
+  FaUser
+} from 'react-icons/fa';
+
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-black to-purple-900 text-white">
-      <main className="px-8 py-16 max-w-4xl mx-auto space-y-10">
-        <h2 className="text-4xl font-extrabold mb-6 text-white">👤 About</h2>
+    <div className="">
+      <main className="px-8 py-16 max-w-7xl mx-auto">
+        <h2 className="text-4xl font-extrabold mb-6 text-white flex items-center gap-2">
+          <FaUser className="text-purple-300  mr-1" /> ABOUT
+        </h2>
         <p className="text-lg leading-relaxed text-gray-200">
           안녕하세요! 저는 백엔드에 특화된 개발자이며, 안정적인 시스템 아키텍처 설계와
           효율적인 API 개발에 관심이 많습니다. 최근에는 GPS 기반 출퇴근 시스템과 백오피스 자동화 도구들을 만들었습니다.
